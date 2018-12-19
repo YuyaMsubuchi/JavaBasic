@@ -72,7 +72,7 @@ public class PTra05_03 {
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
 
 		System.out.println("山:" + mountain + "票");
-		System.out.println("川" + river + "票");
-		System.out.println("海" + ocean + "票");
+		System.out.println("川:" + river + "票");
+		System.out.println("海:" + ocean + "票");
 	}
 }
