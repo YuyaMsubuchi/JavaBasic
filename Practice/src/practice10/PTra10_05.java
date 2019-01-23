@@ -22,21 +22,26 @@ public class PTra10_05 {
 	 * 			ガソリンを1消費して、ランダムな距離(1～15)進む（戻り値が進んだ距離）
 	 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
 	 */
+	
 
 	public static void main(String[] args) {
 
 		// Carクラスを作成後に着手してください
 		// ★ Car型の変数carを宣言し、Carクラスのインスタンスを代入してください
 
+		Car car = new Car();
 
 		// ★ 変数carに格納されているインスタンスのserialNoフィールドに、10000を代入してください
 
+		car.serialNo = 10000;
 
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
 
+		car.color = "Red";
 
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
 
+		car.gasoline = 50;
 
 		// 目的地までの距離
 		final int distance = 300;
@@ -47,6 +52,27 @@ public class PTra10_05 {
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
+		int far = 0;
+		
+		int n = 0;
+		while(distance > far) {
+			far += car.run();
+			n += 1;
+			
+			if(car.gasoline < 0) {
+			break;
+			}
+		}
+		
+		if(car.gasoline < 0) {
+			System.out.println("目的地に到達できませんでした。");
+		} else {
+			System.out.println("目的地にまで" +n +"時間かかりました。残りのガソリンは" + car.gasoline +"リットルです");
+
+		}
+		
+		
+
 
 	}
 }

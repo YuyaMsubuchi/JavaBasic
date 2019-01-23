@@ -14,7 +14,7 @@ public class User {
 	 * 		なし
 	 */
 
-	int userId;
+	int userId ;
 	String userNm;
 	String mail;
 	String password;

@@ -26,22 +26,28 @@ public class PTra10_03 {
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
 
+		
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		
+		
+
 		
 
 		// ★ 入力された値を、String型の変数lineに格納してください
 		
-		String line = scanner.toString();
+		String line = scanner.next();
 
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 
-		String[] array = line.split(",");;  
+		String[] array = line.split(",");
 		
-		array[0] = us.userId  ;
-		array[1] = us.userNm ;
-		array[2] = us.mail;
-		array[3] = us.password;
+		int num = Integer.parseInt(array[0]);
+
+		us.userId = num ;
+		us.userNm = array[1]  ;
+		us.mail = array[2];
+		us.password = array[3];
 		
 		
 
