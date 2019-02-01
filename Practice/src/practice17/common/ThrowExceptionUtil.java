@@ -40,7 +40,7 @@ public class ThrowExceptionUtil {
 	 */
 	public static String inputValue() throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        
 		return reader.readLine();
 	}
 }

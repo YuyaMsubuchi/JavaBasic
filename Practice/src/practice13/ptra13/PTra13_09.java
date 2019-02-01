@@ -50,10 +50,10 @@ public class PTra13_09 {
 			
 
 		}
-	    System.out.println(employee1.userNm);
+	    
 		
 
 
 
-]	}
+	}	
 }

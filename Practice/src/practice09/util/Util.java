@@ -6,9 +6,12 @@
  */
 package practice09.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import entity.Player;
 
 /**
  * 様々なメソッドを集めたJavaプログラムです。
@@ -49,6 +52,11 @@ public class Util {
 		List<String> list = Arrays.asList(array);
 		Collections.shuffle(list);
 		return (String[]) list.toArray();
+	}
+
+	public static void shuffleArray(ArrayList<Player> array) {
+		// TODO 自動生成されたメソッド・スタブ
+		
 	}
 
 }

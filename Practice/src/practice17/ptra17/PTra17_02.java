@@ -6,12 +6,17 @@
  */
 package practice17.ptra17;
 
+import java.io.IOException;
+
 import practice17.common.ThrowExceptionUtil;
 
 public class PTra17_02 {
 	public static void main(String[] args) {
 		try {
+			
 			dispInput();
+			
+			
 		} catch(Exception e) {
 			System.out.println("例外が発生しました");
 		}
@@ -25,8 +30,15 @@ public class PTra17_02 {
 		 * 以下の処理はコンパイルエラーになります。
 		 * ★ 適切な修正を行い、コンパイルエラーをなくしてください
 		 */
-		String line = ThrowExceptionUtil.inputValue();
+		try {
+		
+			String line = ThrowExceptionUtil.inputValue();
+		
 
 		System.out.println(line);
 	}
+		catch(IOException e) {
+			
+		}
+}
 }
